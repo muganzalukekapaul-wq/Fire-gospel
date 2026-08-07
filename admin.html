@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Admin FIRE GOSPEL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card" style="max-width:700px;margin:20px auto">
+<h2>🔒 Espace Admin FIRE GOSPEL</h2>
+<div id="loginBox">
+  <input id="pass" type="password" placeholder="Mot de passe">
+  <button onclick="login()" class="btn">Entrer</button>
+</div>
+
+<div id="adminPanel" style="display:none">
+  <h3>1. Modifier Accueil</h3>
+  <input id="titreAccueil" placeholder="Titre Accueil">
+  <textarea id="texteAccueil" rows="3" placeholder="Texte Accueil"></textarea>
+
+  <h3>2. Ajouter une Actualité</h3>
+  <input id="titreActu" placeholder="Titre de la news">
+  <textarea id="texteActu" rows="3" placeholder="Description"></textarea>
+  <button onclick="ajouterActu()" class="btn">Publier Actu</button>
+
+  <h3>3. Modifier Soutien</h3>
+  <input id="numeroSoutien">
+  <textarea id="texteSoutien" rows="2"></textarea>
+  
+  <h3>4. Voir les Inscriptions</h3>
+  <button onclick="voirInscrits()" class="btn">Afficher Inscriptions</button>
+  <div id="listeInscrits"></div>
+
+  <button onclick="sauvegarder()" class="btn btn-green" style="margin-top:20px">SAUVEGARDER TOUT</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
