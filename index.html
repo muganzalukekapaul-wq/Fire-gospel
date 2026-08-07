@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIRE GOSPEL by Aaron Elisha</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <img id="logo" src="logo.jpg" alt="FIRE GOSPEL Logo">
+    <div>
+      <h1>🔥 FIRE GOSPEL</h1>
+      <p>by Artiste Aaron Elisha</p>
+    </div>
+  </div>
+</header>
+
+<nav id="navbar">
+  <button onclick="show('accueil')">🏠 Accueil</button>
+  <button onclick="show('actus')">📢 Actus</button>
+  <button onclick="show('musique')">🎵 Musique</button>
+  <button onclick="show('inscription')">✍️ S’inscrire</button>
+  <button onclick="show('soutenir')">❤️ Soutenir</button>
+</nav>
+
+<main class="container">
+  <section id="accueil" class="page active">
+    <div class="hero">
+      <h2 id="accueilTitre"></h2>
+      <p id="accueilTexte"></p>
+    </div>
+    <div class="btn-group">
+      <button class="btn" onclick="show('inscription')">JE M'INSCRIS</button>
+      <button class="btn btn-green" onclick="show('soutenir')">SOUTENIR</button>
+    </div>
+  </section>
+
+  <section id="actus" class="page">
+    <h2>Actualités du Groupe</h2>
+    <div id="listeActus" class="grid"></div>
+  </section>
+
+  <section id="musique" class="page">
+    <h2>Nos Musiques</h2>
+    <div class="card">
+      <p><b>Chaîne Officielle YouTube</b></p>
+      <a href="https://youtube.com/@aaronelisha-ts6kj" target="_blank">
+        <button class="btn btn-yt">S'ABONNER</button>
+      </a>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=aaronelisha-ts6kj" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="inscription" class="page">
+    <h2>Formulaire d’Inscription</h2>
+    <p>Rejoins-nous pour : Nouvelles, Prière, Soutenir l'œuvre</p>
+    <form id="formInscription" class="form-grid">
+      <input name="nom" placeholder="Nom complet" required>
+      <input name="pays" placeholder="Pays" required>
+      <input name="whatsapp" placeholder="Numéro WhatsApp" required>
+      <input name="email" placeholder="Email">
+      <textarea name="message" placeholder="Comment voulez-vous soutenir ?"></textarea>
+      <button class="btn">ENVOYER</button>
+    </form>
+    <p id="msg"></p>
+  </section>
+
+  <section id="soutenir" class="page">
+    <h2>Soutenir l’œuvre du Seigneur</h2>
+    <div class="card center">
+      <p id="texteSoutien"></p>
+      <p><b>Mobile Money / Airtel Money :</b></p>
+      <h3 id="numero"></h3>
+      <a href="https://wa.me/243992469438" target="_blank">
+        <button class="btn btn-green">CONTACTER SUR WHATSAPP</button>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 FIRE GOSPEL by Aaron Elisha | Goma, RDC</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
